@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cpp_study.cpp">
+    <ClCompile Include="marine.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="photon_cannon.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
