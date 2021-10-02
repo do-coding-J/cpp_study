@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="marine.cpp" />
+    <ClCompile Include="mystring.cpp" />
+    <ClCompile Include="operator.cpp" />
     <ClCompile Include="photon_cannon.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
