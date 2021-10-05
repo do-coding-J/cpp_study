@@ -12,7 +12,8 @@ public:
     Complex(const Complex& c) { real = c.real, img = c.img; }
     Complex(const char* str);
 
-    Complex operator+(const Complex& c) const;
+    //Complex operator+(const Complex& c) const;
+    friend Complex operator+(const Complex& a, const Complex& b);
     Complex operator-(const Complex& c) const;
     Complex operator*(const Complex& c) const;
     Complex operator/(const Complex& c) const;
@@ -24,20 +25,18 @@ public:
 
     Complex& operator=(const Complex& c);
 
+    friend std::ostream& operator<<(std::ostream& os, const Complex& c);
+
     void println() {
         std::cout << "( " << real << " , " << img << " ) " << std::endl;
     }
 };
 Complex::Complex(const char* str) {
-    // 입력 받은 문자열을 분석하여 real 부분과 img 부분을 찾아야 한다.
-    // 문자열의 꼴은 다음과 같습니다 "[부호](실수부)(부호)i(허수부)"
-    // 이 때 맨 앞의 부호는 생략 가능합니다. (생략시 + 라 가정)
 
     int begin = 0, end = strlen(str);
     img = 0.0;
     real = 0.0;
 
-    // 먼저 가장 기준이 되는 'i' 의 위치를 찾는다.
     int pos_i = -1;
     for (int i = 0; i != end; i++) {
         if (str[i] == 'i') {
@@ -81,15 +80,20 @@ double Complex::get_number(const char* str, int from, int to) const {
             num += ((str[i] - '0') * decimal);
         }
         else
-            break;  // 그 이외의 이상한 문자들이 올 경우
+            break;
     }
 
     if (minus) num *= -1.0;
 
     return num;
 }
-Complex Complex::operator+(const Complex& c) const {
-    Complex temp(real + c.real, img + c.img);
+//Complex Complex::operator+(const Complex& c) const {
+//    Complex temp(real + c.real, img + c.img);
+//    return temp;
+//}
+Complex operator+(const Complex& a, const Complex& b)
+{
+    Complex temp(a.real + b.real, a.img + b.img);
     return temp;
 }
 Complex Complex::operator-(const Complex& c) const {
@@ -129,14 +133,13 @@ Complex& Complex::operator=(const Complex& c) {
     return *this;
 }
 
-int main() {
-    Complex a(0, 0);
-    a = a + "-1.1 + i3.923";
-    a.println();
-    a = a - "1.2 -i1.823";
-    a.println();
-    a = a * "2.3+i22";
-    a.println();
-    a = a / "-12+i55";
-    a.println();
+std::ostream& operator<<(std::ostream& os, const Complex& c) {
+    os << "( " << c.real << " , " << c.img << " ) ";
+    return os;
 }
+
+//int main() {
+//    Complex a(0, 0);
+//    a = "-1.1 + i3.923" + a;
+//    std::cout << "a 의 값은 : " << a << " 이다. " << std::endl;
+//}
