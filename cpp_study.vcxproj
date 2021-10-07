@@ -145,6 +145,7 @@
     <ClCompile Include="mystring.cpp" />
     <ClCompile Include="operator.cpp" />
     <ClCompile Include="photon_cannon.cpp" />
+    <ClCompile Include="inheritance.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

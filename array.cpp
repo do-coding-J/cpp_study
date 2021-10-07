@@ -222,28 +222,28 @@ namespace MyArray {
         return start;
     }
 }  // namespace MyArray
-int main() {
-    int size[] = { 2, 3, 4 };
-    MyArray::Array arr(3, size);
-
-    MyArray::Array::Iterator itr = arr.begin();
-    for (int i = 0; itr != arr.end(); itr++, i++) (*itr) = i;
-    for (itr = arr.begin(); itr != arr.end(); itr++)
-        std::cout << *itr << std::endl;
-
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 3; j++) {
-            for (int k = 0; k < 4; k++) {
-                arr[i][j][k] = (i + 1) * (j + 1) * (k + 1) + arr[i][j][k];
-            }
-        }
-    }
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 3; j++) {
-            for (int k = 0; k < 4; k++) {
-                std::cout << i << " " << j << " " << k << " " << arr[i][j][k]
-                    << std::endl;
-            }
-        }
-    }
-}
+//int main() {
+//    int size[] = { 2, 3, 4 };
+//    MyArray::Array arr(3, size);
+//
+//    MyArray::Array::Iterator itr = arr.begin();
+//    for (int i = 0; itr != arr.end(); itr++, i++) (*itr) = i;
+//    for (itr = arr.begin(); itr != arr.end(); itr++)
+//        std::cout << *itr << std::endl;
+//
+//    for (int i = 0; i < 2; i++) {
+//        for (int j = 0; j < 3; j++) {
+//            for (int k = 0; k < 4; k++) {
+//                arr[i][j][k] = (i + 1) * (j + 1) * (k + 1) + arr[i][j][k];
+//            }
+//        }
+//    }
+//    for (int i = 0; i < 2; i++) {
+//        for (int j = 0; j < 3; j++) {
+//            for (int k = 0; k < 4; k++) {
+//                std::cout << i << " " << j << " " << k << " " << arr[i][j][k]
+//                    << std::endl;
+//            }
+//        }
+//    }
+//}
