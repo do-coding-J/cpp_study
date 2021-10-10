@@ -140,12 +140,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="array.cpp" />
+    <ClCompile Include="excel.cpp" />
     <ClCompile Include="int.cpp" />
     <ClCompile Include="marine.cpp" />
     <ClCompile Include="mystring.cpp" />
     <ClCompile Include="operator.cpp" />
     <ClCompile Include="photon_cannon.cpp" />
     <ClCompile Include="inheritance.cpp" />
+    <ClCompile Include="template.cpp" />
+    <ClCompile Include="utility.cpp" />
+    <ClCompile Include="Mycell.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utility.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
