@@ -45,19 +45,19 @@ public:
 	}
 };
 
-int main() {
-	Vector<int> int_vec;
-	int_vec.push_back(3);
-	int_vec.push_back(2);
-
-	std::cout << "-------- int vector ----------" << std::endl;
-	std::cout << "첫번째 원소 : " << int_vec[0] << std::endl;
-	std::cout << "두번째 원소 : " << int_vec[1] << std::endl;
-
-	Vector<std::string> str_vec;
-	str_vec.push_back("hello");
-	str_vec.push_back("world");
-	std::cout << "-------- std::string vector -------" << std::endl;
-	std::cout << "첫번째 원소 : " << str_vec[0] << std::endl;
-	std::cout << "두번째 원소 : " << str_vec[1] << std::endl;
-}
+//int main() {
+//	Vector<int> int_vec;
+//	int_vec.push_back(3);
+//	int_vec.push_back(2);
+//
+//	std::cout << "-------- int vector ----------" << std::endl;
+//	std::cout << "첫번째 원소 : " << int_vec[0] << std::endl;
+//	std::cout << "두번째 원소 : " << int_vec[1] << std::endl;
+//
+//	Vector<std::string> str_vec;
+//	str_vec.push_back("hello");
+//	str_vec.push_back("world");
+//	std::cout << "-------- std::string vector -------" << std::endl;
+//	std::cout << "첫번째 원소 : " << str_vec[0] << std::endl;
+//	std::cout << "두번째 원소 : " << str_vec[1] << std::endl;
+//}

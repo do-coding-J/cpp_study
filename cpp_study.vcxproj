@@ -150,6 +150,7 @@
     <ClCompile Include="template.cpp" />
     <ClCompile Include="utility.cpp" />
     <ClCompile Include="Mycell.cpp" />
+    <ClCompile Include="variadic template.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utility.h" />
