@@ -147,43 +147,36 @@
 //	static const int result = 1;
 //};
 
-//생각해보기2
 
-int main() {
-	// 예시 1,2
-	//std::cout << StrCat(std::string("this"), " ", "is", " ", std::string("a"), " ", std::string("sentence")); 
-	
-	//예시 3
-	//std::cout << average(1, 23, 4, 5, 6) << std::endl; 
-	
-	//예시 4
-	//std::cout << "gcd (36,24) :: " << GCD<36, 24>::value << std::endl;
-	
-	// 예시 4.5
-	//typedef Ratio<2, 3> rat;
-	//typedef Ratio<3, 2> rat2;
-	//typedef Ratio_add<rat, rat2> rat3;
-	//std::cout << rat3::num << "/" << rat3::den << std::endl; 
-	
-	//using 을 사용한 버전
-	/*using r1 = Ratio<2, 3>;
-	using r2 = Ratio<3, 2>;
-	using r3 = Ratio_add<r1, r2>;
-	std::cout << "2/3 + 3/2 = " << r3::num << "/" << r3::den << std::endl;
-	using r4 = Ratio_subtrack<r1, r2>;
-	std::cout << "2/3 - 3/2 = " << r4::num << "/" << r4::den << std::endl;
-	using r5 = Ratio_multiply<r1, r2>;
-	std::cout << "2/3 * 3/2 = " << r5::num << "/" << r5::den << std::endl;
-	using r6 = Ratio_divide<r1, r2>;
-	std::cout << "2/3 / 3/2 = " << r6::num << "/" << r6::den << std::endl;*/
-
-	//생각해보기
-	/*std::cout << "6 번째 피보나치 수 : " << fib<6>::result << std::endl;*/
-
-	//생각해보기 2
-	std::cout << std::boolalpha; 
-	std::cout << "Is prime ? :: " << is_prime<2>::result << std::endl; // true 
-	std::cout << "Is prime ? :: " << is_prime<10>::result << std::endl; // false 
-	std::cout << "Is prime ? :: " << is_prime<11>::result << std::endl; // true 
-	std::cout << "Is prime ? :: " << is_prime<61>::result << std::endl; // true 
-}
+//int main() {
+//	// 예시 1,2
+//	//std::cout << StrCat(std::string("this"), " ", "is", " ", std::string("a"), " ", std::string("sentence")); 
+//	
+//	//예시 3
+//	//std::cout << average(1, 23, 4, 5, 6) << std::endl; 
+//	
+//	//예시 4
+//	//std::cout << "gcd (36,24) :: " << GCD<36, 24>::value << std::endl;
+//	
+//	// 예시 4.5
+//	//typedef Ratio<2, 3> rat;
+//	//typedef Ratio<3, 2> rat2;
+//	//typedef Ratio_add<rat, rat2> rat3;
+//	//std::cout << rat3::num << "/" << rat3::den << std::endl; 
+//	
+//	//using 을 사용한 버전
+//	/*using r1 = Ratio<2, 3>;
+//	using r2 = Ratio<3, 2>;
+//	using r3 = Ratio_add<r1, r2>;
+//	std::cout << "2/3 + 3/2 = " << r3::num << "/" << r3::den << std::endl;
+//	using r4 = Ratio_subtrack<r1, r2>;
+//	std::cout << "2/3 - 3/2 = " << r4::num << "/" << r4::den << std::endl;
+//	using r5 = Ratio_multiply<r1, r2>;
+//	std::cout << "2/3 * 3/2 = " << r5::num << "/" << r5::den << std::endl;
+//	using r6 = Ratio_divide<r1, r2>;
+//	std::cout << "2/3 / 3/2 = " << r6::num << "/" << r6::den << std::endl;*/
+//
+//	//생각해보기
+//	/*std::cout << "6 번째 피보나치 수 : " << fib<6>::result << std::endl;*/
+//
+//}
